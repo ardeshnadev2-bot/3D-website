@@ -1,13 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { motion } from 'framer-motion';
-import { Code, Cpu, Database, Cloud } from 'lucide-react';
+import { Shield, Code, Smartphone, Cloud, Cpu, Layout, Wrench } from 'lucide-react';
 
 const services = [
-  { title: 'AI/ML Development', desc: 'Cutting-edge artificial intelligence solutions.', icon: <Cpu className="w-8 h-8 text-neonCyan" /> },
-  { title: 'Web & App Development', desc: 'Next-gen reactive web and mobile apps.', icon: <Code className="w-8 h-8 text-neonPurple" /> },
-  { title: 'Cloud Solutions', desc: 'Scalable cloud infrastructure and hosting.', icon: <Cloud className="w-8 h-8 text-neonBlue" /> },
-  { title: 'Data Analytics', desc: 'Big data processing and insights generation.', icon: <Database className="w-8 h-8 text-white" /> },
+  { title: 'Cyber Security', desc: 'Robust protection against modern digital threats and vulnerabilities.', icon: <Shield className="w-8 h-8 text-neonCyan" /> },
+  { title: 'Web Development', desc: 'Scalable and reactive full-stack web applications.', icon: <Code className="w-8 h-8 text-neonPurple" /> },
+  { title: 'Mobile App Development', desc: 'High-performance native and cross-platform mobile experiences.', icon: <Smartphone className="w-8 h-8 text-neonBlue" /> },
+  { title: 'Cloud & DevOps Services', desc: 'Secure cloud infrastructure and streamlined deployment pipelines.', icon: <Cloud className="w-8 h-8 text-white" /> },
+  { title: 'AI & Automation Solutions', desc: 'Smart automation and machine learning integration.', icon: <Cpu className="w-8 h-8 text-neonCyan" /> },
+  { title: 'UI/UX Design', desc: 'Intuitive user interfaces and engaging user experiences.', icon: <Layout className="w-8 h-8 text-neonPurple" /> },
+  { title: 'Maintenance & Support', desc: 'Reliable ongoing support, updates, and system maintenance.', icon: <Wrench className="w-8 h-8 text-neonBlue" /> },
 ];
 
 const Services = () => {

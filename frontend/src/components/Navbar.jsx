@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link to="/portfolio" className="text-gray-300 hover:text-neonCyan transition-colors">Portfolio</Link>
         <Link to="/careers" className="text-gray-300 hover:text-neonCyan transition-colors">Careers</Link>
         <Link to="/blog" className="text-gray-300 hover:text-neonCyan transition-colors">Blog</Link>
-        <Link to="/contact" className="text-gray-300 hover:text-neonCyan transition-colors">Contact</Link>
+        <Link to="/contact" className="text-gray-300 hover:text-neonCyan transition-colors">Get in Touch</Link>
         <button className="ml-4 px-6 py-2 rounded-full border border-neonPurple text-neonPurple hover:bg-neonPurple hover:text-white transition-all duration-300 shadow-[0_0_10px_rgba(157,0,255,0.2)]">
           Sign In
         </button>

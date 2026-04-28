@@ -3,9 +3,12 @@ import Navbar from '../components/Navbar';
 import { motion } from 'framer-motion';
 
 const jobs = [
-  { role: 'Senior AI Engineer', type: 'Full-time', location: 'Remote' },
-  { role: 'React 3D Developer', type: 'Full-time', location: 'New York, NY' },
-  { role: 'DevOps Specialist', type: 'Contract', location: 'Remote' },
+  { role: 'Cyber Security Intern', type: 'Internship', location: 'Remote / On-site' },
+  { role: 'Web Development Intern', type: 'Internship', location: 'Remote / On-site' },
+  { role: 'Mobile App Development Intern', type: 'Internship', location: 'Remote / On-site' },
+  { role: 'Cloud & DevOps Intern', type: 'Internship', location: 'Remote / On-site' },
+  { role: 'AI & Automation Intern', type: 'Internship', location: 'Remote / On-site' },
+  { role: 'UI/UX Design Intern', type: 'Internship', location: 'Remote / On-site' },
 ];
 
 const Careers = () => {
@@ -14,8 +17,8 @@ const Careers = () => {
       <Navbar />
       <main className="pt-32 px-4 max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gradient mb-4">Join Our Team</h1>
-          <p className="text-gray-400">Help us build the next generation of technology.</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-gradient mb-4">Kickstart Your Tech Career</h1>
+          <p className="text-gray-400">Join our dynamic team, work on real client projects, and grow your skills with industry experts.</p>
         </div>
         
         <div className="space-y-6">
@@ -34,9 +37,9 @@ const Careers = () => {
                   <span>{job.location}</span>
                 </div>
               </div>
-              <button className="mt-4 md:mt-0 px-6 py-2 rounded-full border border-neonCyan text-neonCyan group-hover:bg-neonCyan group-hover:text-darkBg transition-all font-semibold">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCv8KlMzl-izHMGpXIq3s33fOJUJ3PmiesAgcJ_9Y5JXA6qg/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 md:mt-0 px-6 py-2 rounded-full border border-neonCyan text-neonCyan group-hover:bg-neonCyan group-hover:text-darkBg transition-all font-semibold">
                 Apply Now
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>

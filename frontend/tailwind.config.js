@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        neonBlue: '#00f3ff',
-        neonPurple: '#9d00ff',
-        neonCyan: '#00ffff',
-        darkBg: '#050510',
+        neonBlue: '#2563eb', // Now Corporate Blue (kept class name for compatibility or will change it later, let's keep name for now or replace everywhere? Actually let's rename them)
+        neonPurple: '#10b981', // Now Teal/Emerald
+        neonCyan: '#38bdf8', // Light Blue
+        darkBg: '#0f172a', // Slate dark
         glassBg: 'rgba(255, 255, 255, 0.05)',
       },
       backgroundImage: {
