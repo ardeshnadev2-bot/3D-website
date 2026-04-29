@@ -22,8 +22,12 @@ app.post('/api/contact', (req, res) => {
   res.status(200).json({ success: true, message: 'Message received successfully.' });
 });
 
-const PORT = process.env.PORT || 5000;
+// Export the Express API for Vercel
+module.exports = app;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production') {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}

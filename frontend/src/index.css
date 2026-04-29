@@ -4,23 +4,28 @@
 
 @layer base {
   body {
-    @apply bg-darkBg text-white overflow-x-hidden antialiased;
+    background-color: #0A0A23;
+    @apply text-white overflow-x-hidden antialiased transition-colors duration-300;
     font-family: 'Inter', sans-serif;
   }
 }
 
 @layer utilities {
   .glass {
-    @apply bg-glassBg backdrop-blur-md border border-white/10 rounded-2xl;
+    background-color: rgba(255, 255, 255, 0.05);
+    @apply backdrop-blur-md border border-white/10 rounded-2xl;
   }
   .glass-card {
     @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-xl transition-all duration-300;
   }
   .glass-card:hover {
-    @apply shadow-[0_4px_40px_rgba(0,255,255,0.2)] border-white/20;
+    @apply shadow-[0_4px_40px_rgba(0,198,255,0.2)] border-white/20;
   }
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-neonBlue via-neonPurple to-neonCyan;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #00C6FF, #7F00FF, #00F5A0);
   }
 }
 
@@ -32,9 +37,9 @@
   background: #050510;
 }
 ::-webkit-scrollbar-thumb {
-  background: #9d00ff;
+  background: #7F00FF;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #00f3ff;
+  background: #00C6FF;
 }
